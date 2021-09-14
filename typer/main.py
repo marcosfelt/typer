@@ -673,7 +673,7 @@ def get_click_param(
             # Click doesn't accept a flag of type bool, only None, and then it sets it
             # to bool internally
             parameter_type = None
-        default_option_name = name.lower()
+        default_option_name = param.name.lower()
         if is_flag:
             default_option_declaration = (
                 f"--{default_option_name}/--no-{default_option_name}"
